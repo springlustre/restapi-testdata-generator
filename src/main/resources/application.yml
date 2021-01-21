@@ -1,0 +1,18 @@
+server:
+  port: 20000
+#  servlet:
+#    context-path: /v1
+
+spring:
+  application:
+    name: restapi-testdata-generator
+#  profiles:
+#    active: dev
+
+management:
+  health:
+    redis:
+      enabled: false
+  endpoint:
+    health:
+      show-details: always
