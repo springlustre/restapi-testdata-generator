@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- *
- * databaseTable:TestDataTemplete
+ * @author springlustre
+ * 2020.12.17
  */
 public class TestDataTemplete implements Serializable{
 

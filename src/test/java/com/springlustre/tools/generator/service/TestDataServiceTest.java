@@ -37,7 +37,7 @@ public class TestDataServiceTest {
     }
 
     @Test
-    public void genStringEn(){
+    private void genStringEn(){
         List<String> res = TestDataService.getInstance().genStringEn(2,10,10);
         System.out.println(JSON.toJSON(res));
     }
@@ -50,7 +50,7 @@ public class TestDataServiceTest {
         Map<String, Object> res = TestDataService.getInstance().genTestDataFromTemplete(dataList,"data_templete.xlsx",0);
         List list = Lists.newArrayList();
         list.add(res);
-        String path = "demo.xls";
+        String path = "demo2.xls";
         String name = "test";
         boolean suc = ExcelWriteUtil.writerExcel(path,name,titles,list);
         System.out.println(suc);

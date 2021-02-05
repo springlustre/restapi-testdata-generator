@@ -6,7 +6,7 @@ import com.mifmif.common.regex.util.Iterator;
 import java.util.List;
 
 /**
- * @author wangchunze
+ * @author springlustre
  * 2020.11.17
  */
 

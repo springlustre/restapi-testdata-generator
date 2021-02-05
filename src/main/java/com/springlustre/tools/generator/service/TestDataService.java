@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * @author wangchunze
+ * @author springlustre
  * 2020.11.17
  */
 
@@ -213,7 +213,12 @@ public class TestDataService {
 //                    case "2":
 //                        break;
                     case "3":
-                        value = JSON.toJSONString(genTestDataFromExcel(excelPath,data.getResource(),cycleCnt+1));
+                        Map<String, Object> m = genTestDataFromExcel(excelPath,data.getResource(),cycleCnt+1);
+                        if(data.getParamType().equalsIgnoreCase("json")){
+                            value = m;
+                        }else{
+                            value = JSON.toJSONString(m);
+                        }
                         break;
                     default:
                         value = genStringByParamType(data);
